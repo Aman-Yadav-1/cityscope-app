@@ -1,0 +1,98 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/context/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/lib/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  safelist: [
+    // Badge colors
+    'bg-blue-100', 'text-blue-800',
+    'bg-green-100', 'text-green-800',
+    'bg-yellow-100', 'text-yellow-800',
+    'bg-purple-100', 'text-purple-800',
+    // Button variants
+    'bg-blue-600', 'hover:bg-blue-700', 'text-white',
+    'bg-gray-100', 'hover:bg-gray-200', 'text-gray-800',
+    // Interactive states
+    'hover:bg-blue-50', 'hover:text-blue-600',
+    'focus:ring-2', 'focus:ring-blue-500', 'focus:border-blue-500',
+    // Spacing and layout
+    'p-2', 'p-3', 'p-4', 'p-5', 'p-6',
+    'px-2', 'px-3', 'px-4', 'px-5', 'py-1', 'py-2', 'py-3',
+    'mt-1', 'mt-2', 'mt-4', 'mt-6', 'mt-8',
+    'mb-1', 'mb-2', 'mb-4', 'mb-6', 'mb-8',
+    'ml-1', 'ml-2', 'ml-3', 'ml-4',
+    'mr-1', 'mr-2', 'mr-3', 'mr-4',
+    'space-x-1', 'space-x-2', 'space-x-3', 'space-x-4', 'space-x-6',
+    'space-y-1', 'space-y-2', 'space-y-3', 'space-y-4', 'space-y-6',
+    'text-orange-500', 'text-gray-500',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        green: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+        yellow: {
+          50: '#fefce8',
+          100: '#fef9c3',
+          200: '#fef08a',
+          300: '#fde047',
+          400: '#facc15',
+          500: '#eab308',
+          600: '#ca8a04',
+          700: '#a16207',
+          800: '#854d0e',
+          900: '#713f12',
+        },
+        purple: {
+          50: '#faf5ff',
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      },
+    },
+  },
+  plugins: [],
+};

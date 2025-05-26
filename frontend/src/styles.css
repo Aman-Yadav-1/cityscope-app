@@ -1,0 +1,303 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Base styles */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+/* Header styles */
+.header {
+  @apply bg-white shadow-md sticky top-0 z-50;
+}
+
+.header-container {
+  @apply container mx-auto px-4 py-3 flex justify-between items-center;
+}
+
+.logo {
+  @apply flex items-center space-x-2;
+}
+
+.logo-icon {
+  @apply bg-blue-600 text-white p-2 rounded-lg;
+}
+
+.logo-text {
+  @apply text-2xl font-bold text-blue-600 tracking-tight;
+}
+
+/* Navigation styles */
+.nav-menu {
+  @apply hidden md:flex space-x-6 items-center;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-blue-600 transition-colors font-medium;
+}
+
+.nav-link-active {
+  @apply text-blue-600 font-semibold;
+}
+
+/* User menu styles */
+.user-menu {
+  @apply relative;
+}
+
+.user-avatar {
+  @apply w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 border-2 border-blue-200 overflow-hidden;
+}
+
+.user-dropdown {
+  @apply absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100;
+}
+
+.dropdown-item {
+  @apply block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors;
+}
+
+/* Post card styles */
+.post-card {
+  @apply bg-white rounded-xl shadow-sm p-5 mb-5 border border-gray-100 hover:shadow-md transition-shadow;
+}
+
+.post-header {
+  @apply flex justify-between items-start mb-4;
+}
+
+.post-user {
+  @apply flex items-center;
+}
+
+.post-avatar {
+  @apply w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 border-2 border-blue-200 overflow-hidden mr-3;
+}
+
+.post-username {
+  @apply font-semibold text-gray-800 hover:text-blue-600 transition-colors;
+}
+
+.post-time {
+  @apply text-xs text-gray-500 mt-0.5;
+}
+
+.post-badge {
+  @apply text-xs px-2.5 py-1 rounded-full font-medium;
+}
+
+.post-content {
+  @apply mb-4 text-gray-800 whitespace-pre-line;
+}
+
+.post-image {
+  @apply mb-4 rounded-lg overflow-hidden;
+}
+
+.post-image img {
+  @apply w-full h-64 object-cover transition-transform hover:scale-105 duration-300;
+}
+
+.post-location {
+  @apply flex items-center text-gray-600 mb-4 bg-gray-50 px-3 py-2 rounded-lg;
+}
+
+.post-actions {
+  @apply flex items-center justify-between border-t border-gray-100 pt-4 mt-2;
+}
+
+.action-button {
+  @apply flex items-center transition-colors;
+}
+
+/* Post form styles */
+.post-form {
+  @apply bg-white rounded-xl shadow-md p-6 mb-6 border border-gray-100;
+}
+
+.post-form-header {
+  @apply text-xl font-semibold mb-4 text-gray-800 flex items-center;
+}
+
+.post-form-icon {
+  @apply bg-blue-100 p-2 rounded-lg text-blue-600 mr-2;
+}
+
+.post-textarea {
+  @apply w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none text-gray-700 shadow-sm;
+}
+
+.post-counter {
+  @apply text-sm text-gray-500;
+}
+
+.post-counter-warning {
+  @apply text-sm text-orange-500;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-lg transition-colors;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-sm;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium shadow-sm;
+}
+
+.btn-icon {
+  @apply flex items-center space-x-2;
+}
+
+/* Form styles */
+.form-group {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm;
+}
+
+.form-select {
+  @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm bg-white;
+}
+
+/* Filter styles */
+.filter-container {
+  @apply bg-white rounded-xl shadow-sm p-5 border border-gray-100;
+}
+
+.filter-header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.filter-title {
+  @apply flex items-center;
+}
+
+.filter-icon {
+  @apply bg-blue-100 p-2 rounded-lg text-blue-600 mr-3;
+}
+
+.filter-badge {
+  @apply px-3 py-1.5 rounded-full text-sm font-medium flex items-center shadow-sm;
+}
+
+.badge-blue {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.badge-green {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-yellow {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-purple {
+  @apply bg-purple-100 text-purple-800;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200;
+}
+
+.spinner-blue {
+  @apply border-t-4 border-blue-600;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex justify-center mt-8 mb-4;
+}
+
+.pagination-container {
+  @apply flex items-center bg-white rounded-lg shadow-sm border border-gray-100 divide-x divide-gray-100;
+}
+
+.pagination-button {
+  @apply px-4 py-2 transition-colors;
+}
+
+.pagination-button-active {
+  @apply text-blue-600 hover:bg-blue-50;
+}
+
+.pagination-button-disabled {
+  @apply text-gray-400 cursor-not-allowed;
+}
+
+.pagination-text {
+  @apply px-4 py-2 text-sm font-medium text-gray-700;
+}
+
+/* Auth pages */
+.auth-container {
+  @apply min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8;
+}
+
+.auth-card {
+  @apply max-w-md w-full bg-white rounded-xl shadow-md p-8 border border-gray-100;
+}
+
+.auth-header {
+  @apply text-center mb-8;
+}
+
+.auth-logo {
+  @apply bg-blue-600 text-white p-3 rounded-lg inline-flex items-center justify-center mb-4;
+}
+
+.auth-title {
+  @apply text-3xl font-bold text-gray-800 mb-2;
+}
+
+.auth-subtitle {
+  @apply text-xl font-medium text-gray-600;
+}
+
+.auth-description {
+  @apply mt-2 text-sm text-gray-500;
+}
+
+.auth-form {
+  @apply space-y-5;
+}
+
+.auth-input-group {
+  @apply space-y-4;
+}
+
+.auth-input-wrapper {
+  @apply relative;
+}
+
+.auth-input-icon {
+  @apply absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400;
+}
+
+.auth-input {
+  @apply pl-10 w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 block shadow-sm;
+}
+
+.auth-button {
+  @apply w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.auth-footer {
+  @apply mt-6 text-center;
+}
+
+.auth-link {
+  @apply font-medium text-blue-600 hover:text-blue-500;
+}
