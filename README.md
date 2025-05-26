@@ -1,6 +1,42 @@
 # CityScope - Location-Based Community Platform
 
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-5.0-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
+[![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express)](https://expressjs.com/)
+
 CityScope is a location-based community posting platform where users can share updates, recommendations, and local insights. Think of it as a mini-Twitter for neighborhoods or local groups, where users can interact through posts, replies, and reactions.
+
+## Demo
+
+<div align="center">
+  <a href="https://drive.google.com/file/d/1aXs-VHpM9TBP81luMqnjBAHxwYYtqA8O/view?usp=sharing">
+    <img src="https://img.shields.io/badge/Watch_Demo-4285F4?style=for-the-badge&logo=google-drive&logoColor=white" alt="Watch Demo on Google Drive" />
+  </a>
+</div>
+
+[Click here to download and view the demo video](https://drive.google.com/file/d/1aXs-VHpM9TBP81luMqnjBAHxwYYtqA8O/view?usp=sharing)
+
+## Screenshots
+
+<div align="center">
+  <img src="https://github.com/Aman-Yadav-1/cityscope-app/raw/main/screenshots/home-feed.png" alt="Home Feed" width="400" />
+  <img src="https://github.com/Aman-Yadav-1/cityscope-app/raw/main/screenshots/explore-map.png" alt="Explore Map" width="400" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/Aman-Yadav-1/cityscope-app/raw/main/screenshots/notifications.png" alt="Notifications" width="400" />
+  <img src="https://github.com/Aman-Yadav-1/cityscope-app/raw/main/screenshots/post-detail.png" alt="Post Detail" width="400" />
+</div>
+
+## Overview
+
+CityScope aims to connect local communities by providing a platform where users can:
+- Share recommendations for local businesses and attractions
+- Ask for help from neighbors
+- Post updates about local events and news
+- Discover what's happening in their vicinity through location-based filtering
 
 ## Features
 
@@ -26,6 +62,13 @@ CityScope is a location-based community posting platform where users can share u
 ### Interactions
 - Reply to posts
 - Like or dislike posts
+- Bookmark posts for later reference
+- Receive notifications for interactions with your content
+
+### Explore
+- View posts on an interactive map
+- Discover content based on proximity to your location
+- Toggle between map and list views
 
 ### User Profiles
 - View user information and bio
@@ -34,11 +77,13 @@ CityScope is a location-based community posting platform where users can share u
 ## Tech Stack
 
 ### Frontend
-- Next.js 14
+- Next.js 14 with App Router
 - TypeScript
-- Tailwind CSS
-- React Hooks
+- Tailwind CSS for styling
+- React Hooks and Context API for state management
 - Axios for API requests
+- Framer Motion for animations
+- Google Maps API for location-based features
 
 ### Backend
 - Node.js with Express
@@ -131,6 +176,39 @@ The application can be deployed using various platforms:
 
 - Frontend: Vercel, Netlify, or AWS Amplify
 - Backend: Heroku, AWS, or DigitalOcean
+
+## Recent Updates
+
+### Notification System
+- Real-time notification counter in the header
+- Mark notifications as read/unread
+- Different notification types (likes, comments, follows)
+
+### Google Maps Integration
+- Interactive map view for exploring posts
+- Location-based filtering
+- User location detection
+
+### Improved Error Handling
+- Graceful fallbacks for API failures
+- User-friendly error messages
+- Consistent dialog-based feedback
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Contact
+
+Aman Yadav - [@Aman-Yadav-1](https://github.com/Aman-Yadav-1)
+
+Project Link: [https://github.com/Aman-Yadav-1/cityscope-app](https://github.com/Aman-Yadav-1/cityscope-app)
 
 ## License
 
